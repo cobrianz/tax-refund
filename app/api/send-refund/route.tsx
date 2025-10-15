@@ -239,7 +239,7 @@ Submitted on: ${new Date().toLocaleString()}
 
     return NextResponse.json({ success: true, message: "Refund application submitted successfully" })
   } catch (error) {
-    console.error("[v0] Error sending email:", error)
+    console.error("Error sending email:", error)
     return NextResponse.json({ error: "Failed to submit refund application" }, { status: 500 })
   }
 }
